@@ -1,0 +1,21 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://example.com/school/student/1>
+   a <http://example.com/examples/school#ComputerNerd> ;
+   foaf:nick "Simone" .
+
+<http://example.com/school/student/2>
+   a <http://example.com/examples/school#SoccerPlayer> ;
+   foaf:nick "Rooney".
+
+<http://example.com/school/student/3>
+   a <http://example.com/examples/school#BandNerd> ;
+   foaf:nick "Louis".
+
+<http://example.com/school/student/4>
+   a <http://example.com/examples/school#Preppy> ;
+   a <http://example.com/examples/school#BandNerd> ;
+   a <http://example.com/examples/school#MathNerd> ;
+   a <http://example.com/examples/school#ComputerNerd> ;
+   a <http://example.com/examples/school#Karateka> ;
+   foaf:nick "Astro".

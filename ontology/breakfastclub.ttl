@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/subject/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://example.com/examples/school#Student> a owl:Class ;
+   rdfs:label "student" ;
+   rdfs:comment "An rdfs:Class of students." .
+
+<http://example.com/examples/school#Nerd>
+   rdfs:label "nerd" ;
+   rdfs:subClassOf <http://example.com/examples/school#Student>.
+
+<http://example.com/examples/school#BandNerd>
+   rdfs:label "band nerd" ;
+   rdfs:subClassOf <http://example.com/examples/school#Nerd>.
+   
+<http://example.com/examples/school#MathNerd>
+   rdfs:label "math nerd" ;
+   rdfs:subClassOf <http://example.com/examples/school#Nerd>.
+
+<http://example.com/examples/school#ComputerNerd>
+   rdfs:label "computer nerd" ;
+   rdfs:subClassOf <http://example.com/examples/school#Nerd>.
+
+<http://example.com/examples/school#Preppy>
+   rdfs:label "preppy" ;
+   rdfs:subClassOf <http://example.com/examples/school#Student>.
+   
+<http://example.com/examples/school#Jock>
+   rdfs:label "jock" ;
+   rdfs:subClassOf <http://example.com/examples/school#Student>.
+
+<http://example.com/examples/school#SoccerPlayer>
+   rdfs:label "soccer player" ;
+   rdfs:subClassOf <http://example.com/examples/school#Jock>.
+
+<http://example.com/examples/school#FieldHockeyPlayer>
+   rdfs:label "field hockey player" ;
+   rdfs:subClassOf <http://example.com/examples/school#Jock>.
+
+<http://example.com/examples/school#Karateka>
+   rdfs:label "Karate student" ;
+   rdfs:subClassOf <http://example.com/examples/school#Jock>.
